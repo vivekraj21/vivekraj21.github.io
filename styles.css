@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    
+}
+/* Header section */
+body{
+     background-color: white;
+}
+
+.container{
+    padding: 10px 10%;
+    border-color: black;
+    border-radius: 1px solid black;
+ 
+ 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 4px;
+    background-color: rgb(130, 230, 9);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1sec;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+#first{
+    display: flex;
+}
+.image{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 60%;
+}
+.header-text{
+    
+    margin-top: 15%;
+    font-size: 30px;
+    margin-left: 0%;
+    padding-left:50px ;
+    width: 600px;   
+}
+.header-text-name{
+    color: orange;
+}
+#virtual-add{
+    display: flex;
+    
+    margin-top: 40px;
+    margin-left: 0px;
+   
+}
+#virtual-add button{
+    background-color: rgb(49, 124, 229);
+    border: none;
+    border-radius: 5px;
+}
+#linkedbut{
+    margin-left: 20px;
+}
+#gitbut{
+    margin-left: 20px;
+}
+#linkedinglogo{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+#gitlogo{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+#resume{
+    text-decoration: none;
+    background-color: rgb(49, 124, 229);
+    color: white;
+    padding: 0px 3px 0px 3px;
+    font-size: larger;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .image{
+        background-image:url(images/g.jpg) ;
+        width: 170px;
+        height: 170px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+   nav img{
+    margin-left: 100px;
+    width: 100px;
+   }
+   nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+   }
+   .header-text{
+    margin-top: 10%;
+    font-size: 15px;
+    margin-left: -17%;
+    padding-left:50px ;
+    width: 300px;   
+}
+}
+
+/* <!-- About Section --> */
+#about{
+    margin-top: 100px;
+   
+    background-color: white;
+}
+#about-row2{
+    margin: 10px 40px 10px 40px;
+   
+}
+#about-row2 p{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 20px;
+    color: #b54769;
+    font-size: 18px;
+    font-weight: 250;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#about-row2 h2{
+   padding-left: 600px;
+   
+}
+#about-row1 {
+    margin: 10px 40px 10px -20px;
+    padding-left:42% ;
+    text-decoration:underline;
+    color: blue;
+    font-size: 25px;
+    font-weight: 200;
+}
+#about-row1 h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    margin-left: 15px;
+}
+.about-row3{
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    margin: 50px 300px 10px 340px;
+}
+.about-row3-col{
+    color: blue;
+    margin-right: 140px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about-row3-col::after{
+    content: ''; 
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.about-row3-col.active-col::after{
+    width: 50%;
+}
+.row3-content ul li{
+    list-style: none;
+    margin: 20px 0px 10px 350px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.row3-content ul li span{
+    color: #b54769;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.row3-content{
+    display: none;
+}
+.row3-content.active{
+    display: block;
+}
+
+  
+
+ 
+
+
+
+    

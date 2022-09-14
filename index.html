@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>hello</h1>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SKILLS</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div id="first">
+            
+            <div class="header-text">
+                <h1>Hi, I'm<h1 class="header-text-name"> Vivek Raj </h1>
+                </h1>
+                <h4>Java Backend Developer</h4>
+                <div id="virtual-add">
+                    <button><a href="https://drive.google.com/file/d/1G-ng6BqGpH8Z2tQgjQpaMJvS0Wp-G31D/view?usp=sharing" id="resume">Resume</a></button>
+                    <button id="linkedbut"><a href="https://www.linkedin.com/in/vivek-raj-443aa814a/"><img src="images/linkeddin.png" id="linkedinglogo" alt=""></a></button>
+                    <button id="gitbut"><a href="https://github.com/vivekraj21"><img src="images/git.png" id="gitlogo" alt=""></a></button>
+                    
+                </div>
+                
+            </div>
+            <div>
+                <img src="images/g.jpg" class="image">
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- About Section -->
+     <div id="about">
+        <div id="about-row1">
+            <h1>About Me</h1>
+        </div>
+        <div id="about-row2">
+            <h2>I am Vivek Raj.</h2>
+            <p>I am an aspiring JAVA Backend Developer with creative
+                and analytical skills. Proficient in troubleshooting simple/complex issues, and implementing new features
+                based on user feedback. Looking forward to applying 
+                 and enhancing my skills and knowledge as Backend Developer. </p>
+        </div>
+        <div class="about-row3">
+                <h1 class="about-row3-col active-col" onclick="opentab('education')">Education</h1>
+                <h1 class="about-row3-col" onclick="opentab('experience')">Experience</h1>
+        </div>
+        <div class="row3-content active " id="education">
+              <ul>
+                <li><span>Bachelor of Technology (Mechanical Engineering) </span><br>I.I.T Patna <br>May 2016 - November 2020 </li>
+                <li><span>Higher Secondary School</span> <br>Himalayan Public School <br>April 2014 - April 2016</li>
+                <li><span>Secondary School</span><br>D.A.V Public School <br>April 2013 - April 2014</li>
+              </ul>
+        </div> 
+        <div class="row3-content" id="experience">
+            <ul>
+              <li><span>Mechanical CAD Design Engineer </span><br>Osteo (Start-up) <br>June 2019 - July 2021 <br>Design the Exo-skeleton for osteoarthritis on CAD/
+              Solidworks <br>Communicating with doctors and implementing new features in design. <br>Analyzing the design using Ansys and other softwares.</li>
+              
+            </ul>
+      </div>
+     </div>
+
+     <script>
+        var tablinks = document.getElementsByClassName("about-row3-col");
+        var tabcontents = document.getElementsByClassName("row3-content");
+
+        function opentab(tabname){
+           for(tablink of tablinks){
+            tablink.classList.remove("active-col");
+           }
+           for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active");
+           }
+           event.currentTarget.classList.add("active-col");
+           document.getElementById(tabname).classList.add("active");
+
+        }
+     </script>
 </body>
+
 </html>
