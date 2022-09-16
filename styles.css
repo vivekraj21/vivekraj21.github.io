@@ -5,9 +5,10 @@
     box-sizing: border-box;
     
 }
-/* Header section */
+/*--------------------------------------------------------- Header section -----------------------------------------------------------------*/
 body{
      background-color: white;
+   
 }
 
 .container{
@@ -135,7 +136,7 @@ nav ul li a:hover::after{
 }
 }
 
-/* <!-- About Section --> */
+/* <!-- ---------------------------------------------------------About Section ----------------------------------------------------------------> */
 #about{
     margin-top: 100px;
    
@@ -157,7 +158,7 @@ nav ul li a:hover::after{
 }
 #about-row2 h2{
    padding-left: 600px;
-   
+   color: orange;
 }
 #about-row1 {
     margin: 10px 40px 10px -20px;
@@ -240,6 +241,7 @@ nav ul li a:hover::after{
     #about-row2 h2{
        padding-left: 63px;
        font-size: 15px;
+       color: orange;
        
     }
     .about-row3{
@@ -286,7 +288,7 @@ nav ul li a:hover::after{
         font-family: 'Ubuntu', sans-serif;
     }
 }
-  /*----skills-section----  */
+  /*----------------------------------------------------------Skills-section-----------------------------------------------------------------  */
 
   #skills-section h1{
     margin-left: 650px;
@@ -408,8 +410,327 @@ nav ul li a:hover::after{
   }
   }
 
- 
+ /* ----------------------------------------------PROJECT SECTION-------------------------------------------------------------------------- */
+ #project-section h1{
+    margin-left: 650px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    color: blue;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    font-size: 35px;
+ }
+ #project-1{
+    display: flex;
+ }
+ #project-1 img{
+    width: 700px;
+    height: 500px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .feature{
+  
+    border-radius: 10px;
+    margin-left: 30px;
+    width: 750px;
+    height: 495px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .feature h2{
+    margin-left: 250px;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(228, 129, 37);
+    
+ }
+ .feature p{
+    margin-left: 70px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+ }
+ #a{
+    text-decoration: underline;
+    color: blue;
+ }
+ #p1-git {
+    margin-left: 300px;
+    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ #p1-git a{
+    color: white;
+    text-decoration: none;
+ }
+ #p1-git img{
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    margin-top: 1px;
+ }
+ #p1-live {
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ #p1-live a{
+    color: white;
+    text-decoration: none;
+ }
+ #p1-live img{
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    margin-top: 1px;
+ }
+ @media only screen and (max-width: 600px){
+    #project-section h1{
+        margin-left: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: blue;
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: underline;
+        font-size: 20px;
+     }
+     #project-1{
+        display: block;
+     }
+     #project-1 img{
+        width: 340px;
+        height: 300px;
+        margin-left: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+     }
+     .feature{
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-top: -20px;
+        width: 340px;
+        height: 320px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     .feature h2{
+        margin-left: 90px;
+        margin-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(228, 129, 37);
+        font-size: 20px;
+        
+     }
+     .feature p{
+        margin-left: 20px;
+        margin-top: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        color: black;
+        font-size: 12px;
+     }
+     #p1-git {
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 3px 3px 3px 3px;
+        background-color: blue;
+        color: white;
+        border-radius: 3px;
+        border: transparent;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #p1-git a{
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+     }
+     #p1-git img{
+        width: 15px;
+        height: 15px;
+        margin-left: 2px;
+        margin-top: 1px;
+     }
+     #p1-live {
+        margin-left: 0px;
+        margin-top: 10px;
+        padding: 3px 3px 3px 3px;
+        background-color: blue;
+        color: white;
+        border-radius: 4px;
+        border: transparent;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #p1-live a{
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+     }
+     #p1-live img{
+        width: 15px;
+        height: 15px;
+        margin-left: 2px;
+        margin-top: 1px;
+     }
+    }
+
+     /* ------------------------------------------------------------Contact-section------------------------------------------------------------- */
+     #contacts h1{
+        margin-left: 650px;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        color: blue;
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: underline;
+        font-size: 35px;
+     }
+     #cell{
+        display: flex;
+        margin-left: 630px;
+     }
+     #cell img{
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+     }
+     #cell h3{
+        margin-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+     }
+    #mail{
+        display: flex;
+        margin-left: 630px; 
+    }
+    #mail img{
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+     }
+     #mail h3{
+        margin-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+     }
+     #link-git{
+        display: flex;
+        margin-left: 635px;
+     }
+     #link-git a img{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+     }
+     #resume-add{
+        margin-left: 0px;
+     }
+     #resume-add button{
+        width: 90px;
+        height: 35px;
+        border-radius: 6px;
+        background-color: black;
+     }
+     #resume-add button a{
+        color: white;
+        text-decoration: none;
+        
+     }
+     #last{
+        width: 100%;
+        height: 100px;
+        color: white;
+        background-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        padding-left: 635px;
+        padding-top: 40px;
+        margin-top: 30px;
+     }
+
+     @media only screen and (max-width: 600px){
+        #contacts h1{
+        margin-left: 140px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: blue;
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: underline;
+        font-size: 20px;
+         }
+         #cell{
+            display: flex;
+            margin-left: 100px;
+         }
+         #cell img{
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+         }
+         #cell h3{
+            margin-top: 5px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 13px;
+         }
+         #mail{
+            display: flex;
+            margin-left: 100px; 
+        }
+        #mail img{
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+         }
+         #mail h3{
+            margin-top: 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 13px;
+         }
+         #link-git{
+            display: flex;
+            margin-left: 100px;
+            margin-top: 6px;
+         }
+         #link-git a img{
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+         }
+         #resume-add{
+            margin-left: 0px;
+         }
+         #resume-add button{
+            width: 55px;
+            height: 22px;
+            border-radius: 6px;
+            background-color: black;
+         }
+         #resume-add button a{
+            color: white;
+            text-decoration: none;
+            
+         }
+         #last{
+            width: 100%;
+            height: 40px;
+            color: white;
+            background-color: black;
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 105px;
+            padding-top: 10px;
+            margin-top: 10px;
+            font-size: 13px;
+         }
+     }
+
+ 
 
 
     
