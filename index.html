@@ -1,179 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css"> -->
 </head>
-
 <body>
-    <!---------------------------------------------------------- Header Section ------------------------------------------------------------------>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.jpg" class="logo" alt="">
-                <ul>
-                    <li><a href="#first">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills-section">SKILLS</a></li>
-                    <li><a href="#project-section">PROJECTS</a></li>
-                    <li><a href="#contacts">CONTACTS</a></li>
-                </ul>
-            </nav>
-            <div id="first">
-            
-            <div class="header-text">
-                <h1>Hi, I'm<h1 class="header-text-name"> Vivek Raj </h1>
-                </h1>
-                <h4>Java Backend Developer</h4>
-                <div id="virtual-add">
-                    <button><a href="https://drive.google.com/file/d/1G-ng6BqGpH8Z2tQgjQpaMJvS0Wp-G31D/view?usp=sharing" id="resume">Resume</a></button>
-                    <button id="linkedbut"><a href="https://www.linkedin.com/in/vivek-raj-443aa814a/"><img src="images/linkeddin.png" id="linkedinglogo" alt=""></a></button>
-                    <button id="gitbut"><a href="https://github.com/vivekraj21"><img src="images/git.png" id="gitlogo" alt=""></a></button>
-                    
-                </div>
-                
-            </div>
-            <div>
-                <img src="images/g.jpg" class="image">
-            </div>
-            </div>
-        </div>
+    <nav class="navbar">
+       <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About </a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact </a></li>
+       </ul>
+    </nav>
 
-    </div>
-    <!-- ----------------------------------------------------------About Section ----------------------------------------------------------------->
-     <div id="about">
-        <div id="about-row1">
-            <h1>About Me</h1>
+    <section id="home">
+        <div class="main"> 
+           <h1 class="headings">Hi, I am <br>Vivek Raj</h1>
+            <p>Java Backend Developer</p>
+           <button class="btn"> 
+             <a href="https://drive.google.com/file/d/1G-ng6BqGpH8Z2tQgjQpaMJvS0Wp-G31D/view?usp=sharing">Let's Talk</a> 
+        </button>
         </div>
-        <div id="about-row2">
-            <h2>I am Vivek Raj.</h2>
-            <p>I am an aspiring JAVA Backend Developer with creative
-                and analytical skills. Proficient in troubleshooting simple/complex issues, and implementing new features
-                based on user feedback. Looking forward to applying 
-                 and enhancing my skills and knowledge as Backend Developer. </p>
-        </div>
-        <div class="about-row3">
-                <h1 class="about-row3-col active-col" onclick="opentab('education')">Education</h1>
-                <h1 class="about-row3-col" onclick="opentab('experience')">Experience</h1>
-        </div>
-        <div class="row3-content active " id="education">
-              <ul>
-                <li><span>Bachelor of Technology (Mechanical Engineering) </span><br>I.I.T Patna <br>May 2016 - November 2020 </li>
-                <li><span>Higher Secondary School</span> <br>Himalayan Public School <br>April 2014 - April 2016</li>
-                <li><span>Secondary School</span><br>D.A.V Public School <br>April 2013 - April 2014</li>
-              </ul>
-        </div> 
-        <div class="row3-content" id="experience">
-            <ul>
-              <li><span>Mechanical CAD Design Engineer </span><br>Osteo (Start-up) <br>June 2019 - July 2021</li>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME </h1>
+        <div id="pic">
               
-            </ul>
-      </div>
-     </div>
-     <!-- --------------------------------------------------------Skills section ---------------------------------------------------------------->
-      <div id="skills-section">
-            <h1>Skills</h1>
-             <div id="skills-logo">
-                <div class="skills-logo1">
-                    <img src="images/html.webp" alt="">
-                </div>
-                <div class="skills-logo2">
-                    <img src="images/css.png" alt="">
-                </div>
-                <div class="skills-logo3">
-                    <img src="images/javascript.png" alt="">
-                </div>
-                <div class="skills-logo4">
-                    <img src="images/java.jpg" alt="">
-                </div>
-               
-             </div>
-             <div id="skills-logonext">
-                <div class="skills-logo5">
-                    <img src="images/sql.png" alt="">
-                </div>
-                <div class="skills-logo6">
-                    <img src="images/springboot.png" alt="">
-                </div>
-                <div class="skills-logo7">
-                    <img src="images/hibernate.png" alt="">
-                </div>
-             </div>
-      </div>
-      <!-------------------------------------------------------------- Project section ------------------------------------------------------------>
-        <div id="project-section">
-            <h1>Projects</h1>
-            <div id="project-1">
-                <img src="images/Zee5-4042064-696x397.webp" alt="">
-                <div class="feature">
-                    <h2>ZEE5.com Clone</h2>
-                    <p>ZEE5 is an Indian subscription video on-demand and over-the-top streaming service.</p>
-                    <p id="p-2">A collaborative project built by a team of 4, executed in 5 days.</p>
-                    <p id="a">Features :</p>
-                    <p>a) End to end customer service for streaming videos i.e, Signup, Login and Payment for plan.</p>
-                    <p>b) Fetching of API Server to stream video.</p>
-                    <p id="a">Tech-Stack :</p>
-                    <p>HTML | CSS | JAVASCRIPT | GIT </p>
-                    <p id="a">Responsibility :</p>
-                    <p>1) Lead the team.</p>
-                    <p>2) Design & Structure of Home Page.</p>
-                    <p>3) Fetching of API server to stream videos.</p>
-                    <button id="p1-git"><a href="https://github.com/vivekraj21/unkempt-direction-8363">CODE</a>
-                        <img src="images/git.png" alt="">
-                    </button>
-                    <button id="p1-live"><a href="https://coruscating-sprinkles-12d10b.netlify.app/index.html">LIVE</a>
-                        <img src="images/live logo.png" alt="">
-                    </button>
-                </div>
-            </div>
+              <img src="images/g.jpg" alt="">
+              <div id="intro">
+                  <h2>VIVEK RAJ</h2>
+                  <p>I am an aspiring JAVA Backend Developer with creative
+                    and analytical skills. Proficient in troubleshooting simple/complex issues, and implementing new features
+                    based on user feedback.<br> Looking forward to applying 
+                     and enhancing my skills and knowledge as Backend Developer.</p>
+                     <h2>Education</h2>
+                     <ul>
+                        <li><span>Bachelor of Technology (Mechanical Engineering) </span><br>I.I.T Patna <br>May 2016 - November 2020 </li>
+                        <li><span>Higher Secondary School</span> <br>Himalayan Public School <br>April 2014 - April 2016</li>
+                        <li><span>Secondary School</span><br>D.A.V Public School <br>April 2013 - April 2014</li>
+                      </ul>
+                    
+                    </div>
         </div>
-       <!-- ---------------------------------------------------------------Contact section ----------------------------------------------------->
-       <div id="contacts">
-        <h1>Contacts</h1>
-         <div id="cell">
-            <img src="images/cell-phone.png" alt="">
-            <h3>+91 7322082298</h3>
-         </div>
-         <div id="mail">
-            <img src="images/mail2.png" alt="">
-            <h3>vivekrajrollno21@gmail.com</h3>
-         </div>
-         <div id="link-git">
-            <a href="https://www.linkedin.com/in/vivek-raj-443aa814a/"><img src="images/linkeddin.png" alt=""></a>
-             <a href="https://github.com/vivekraj21"><img src="images/git.png" alt=""></a>
-             <div id="resume-add">
-                <button><a href="https://drive.google.com/file/d/1G-ng6BqGpH8Z2tQgjQpaMJvS0Wp-G31D/view">Resume</a></button>
-            </div>
-            </div>
+    </section>
+
+    <section id="skills">
+        <h1 class="headings">Skills</h1>
+        <div class="gallery">
+            <div><img src="images/frontend.png" alt=""><h3 id="nam">FRONTEND DEVELOPMENT</h3></div>
+              <div><img src="images/backend.jpg" alt=""><h3 id="nam">BACKEND DEVELOPMENT</h3></div>
+             <div><img src="images/dsa.png" alt=""><h3 id="nam">D.S.A</h3></div>
+             <div> <img src="images/commu.jpg" alt=""><h3 id="nam">COMMUNICATION SKILLS</h3></div>
             
-       </div>
+        </div>
 
-       <div id="last">
-           <h4>Copyright © Vivek_2022</h4>
-       </div>
-     <script>
-        var tablinks = document.getElementsByClassName("about-row3-col");
-        var tabcontents = document.getElementsByClassName("row3-content");
+    </section>
 
-        function opentab(tabname){
-           for(tablink of tablinks){
-            tablink.classList.remove("active-col");
-           }
-           for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active");
-           }
-           event.currentTarget.classList.add("active-col");
-           document.getElementById(tabname).classList.add("active");
+    <section id="techskills">
+        <h1 class="headings">Tech-Stack</h1>
+        <div class="gallery">
+            <div><img src="images/html.webp" alt=""></div>
+              <div><img src="images/css.png" alt=""></div>
+             <div><img src="images/javascript.png" alt=""></div>
+             <div> <img src="images/java.jpg" alt=""></div>
+             <div><img src="images/hibernate.png" alt=""></div>
+              <div><img src="images/sql.png" alt=""></div>
+             <div><img src="images/springboot.png" alt=""></div>
+             <div> <img src="IMAGES/restapi.png" alt=""></div>
+        </div>
 
-        }
-     </script>
+    </section>
+
+    <section id="project">
+        <h1 class="headings">MY PROJECTS </h1>
+        <div id="pic">
+            
+              <img id="pr-pic" src="images/Zee5-4042064-696x397.webp" alt="">
+              <div id="project-intro">
+                  <h2>Zee5.com Clone</h2>
+                  <p>ZEE5 is an Indian subscription video on-demand and over-the-top streaming service.</p>
+                  <p id="p-2">A collaborative project built by a team of 4, executed in 5 days.</p>
+                  <p id="a">Features :</p>
+                  <p>a) End to end customer service for streaming videos i.e, Signup, Login and Payment for plan.</p>
+                  <p>b) Fetching of API Server to stream video.</p>
+                  <p id="a">Tech-Stack : HTML | CSS | JAVASCRIPT | GIT </p>
+                  <p id="a">Responsibility :</p>
+                  <p>1) Lead the team.</p>
+                  <p>2) Design & Structure of Home Page.</p>
+                  <p>3) Fetching of API server to stream videos.</p>
+                  <div id="link">
+                  <button id="p1-git"><a href="https://github.com/vivekraj21/unkempt-direction-8363"><img src="images/git.png" alt=""></a>
+                    
+                </button>
+                <button id="p1-live"><a href="https://coruscating-sprinkles-12d10b.netlify.app/index.html"><img src="images/live logo.png" alt=""></a>
+                    
+                </button>
+            </div>
+                    </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">Contacts</h1>
+        <div class="cont-gallery">
+            <div id="ok"><img src="images/phonu.png" alt=""><h3 id="nam">+91 7322082298</h3></div>
+              <div id="ok"><a href="https://www.linkedin.com/in/vivek-raj-443aa814a/"><img src="images/linkeddin.png" alt=""></a><h3 id="nam">LinkedIn</h3></div>
+             <div id="ok"><img src="images/maile.jpg" alt=""><h3 id="nam">vivekrajrollno21@gmail.com</h3></div>
+             <div id="ok"><a href="https://github.com/vivekraj21"><img src="images/git.png" alt=""></a> <h3 id="nam">Git</h3></div>
+            
+        </div>
+    </section>
+
+    <section id="footer">
+       <h3>Created by @ Vivek_Raj</h3>
+    </section>
 </body>
-
 </html>
